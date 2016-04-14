@@ -2,7 +2,7 @@
 <ul>
   {{#each model as |user|}}
     <li>
-      {{user.username}}
+      {{user.username}} ({{user.email}}) <button {{action "deleteUser" user}}>Delete</button>
     </li>
   {{/each}}
 </ul>
